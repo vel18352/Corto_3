@@ -57,3 +57,26 @@ int main()
     
     return 0;
 }
+
+
+Ejercicio 5
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    printf("Ingrese el tamano del array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Ingrese %d enteros separados por un espacio:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int *ptr = arr;
+    printf("Los elementos del array multiplicados por 2 son:\n");
+    for (i = 0; i < n; i++) {
+        printf("%d ", *ptr * 2);
+        ptr++;
+    }
+    return 0;
+}
